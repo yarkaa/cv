@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume - Yaryna Zastavna</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()">🌙 Theme</button>
+
+    <div class="container">
+        <header>
+            <h1>Yaryna Zastavna</h1>
+            <h2>Front-End Developer</h2>
+        </header>
+
+        <div class="grid">
+            <div class="card">
+                <h3>About Me</h3>
+                <p>Junior Front-End Developer with hands-on experience in building responsive and interactive interfaces
+                    using HTML, CSS, and JavaScript. Passionate about turning UI/UX ideas into functional websites.</p>
+            </div>
+
+            <div class="card">
+                <h3>Education</h3>
+                <p><a href="https://lpnu.ua/">Lviv Polytechnic National University</a></p>
+                <ul>
+                    <li>Website development</li>
+                    <li>Web programming</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Contact</h3>
+                <p>Lviv, Ukraine</p>
+                <p>0679891047</p>
+                <p>yaryna.zastavna.kb.2022@lpnu.ua</p>
+            </div>
+
+            <div class="card">
+                <h3>Experience</h3>
+                <p><strong>Freelance Front-End Developer</strong></p>
+                <p><small>September 2024 - Present | Ukraine</small></p>
+                <ul>
+                    <li>Created interactive UI with HTML/CSS/JS</li>
+                    <li>Improved UX resulting in +15% conversion</li>
+                    <li>User testing and feedback integration</li>
+                    <li>Worked with mockups (Figma, Adobe XD)</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="feedback-modal" style="display: none;">
+            <form action="https://formspree.io/f/xzzrelkd" method="POST">
+                <input type="text" name="name" placeholder="Ім’я" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="tel" name="phone" placeholder="Номер телефону">
+                <textarea name="message" placeholder="Ваше повідомлення"></textarea>
+                <button type="submit">Відправити</button>
+            </form>
+        </div>
+
+        <div class="card">
+            <div id="comments-container">
+                <p>Завантаження коментарів...</p>
+            </div>
+        </div>
+
+        <footer id="footer-info"></footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
